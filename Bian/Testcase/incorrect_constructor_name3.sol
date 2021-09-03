@@ -20,13 +20,13 @@ contract Missing{
         owner = msg.sender;
     }
 
-    function () payable external {}
+    function () payable {}
 
     function withdraw()
         public
         onlyowner
     {
-       owner.transfer(address(this).balance);
+       owner.transfer(this.balance);
     }
 
 }

@@ -35,7 +35,7 @@
 
      function migrateTo(address to) public {
          require(creator == msg.sender);
-         to.transfer(address(this).balance);
+         to.transfer(this.balance);
      }
 
  }

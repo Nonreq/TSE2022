@@ -11,7 +11,7 @@ contract MyContract {
 
     address owner;
 
-    constructor() public {
+    function MyContract() public {
         owner = msg.sender;
     }
 

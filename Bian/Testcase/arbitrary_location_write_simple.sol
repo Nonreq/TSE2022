@@ -18,12 +18,7 @@
      function () public payable {
      }
 
-     modifier onlyOwner() {
-        require(msg.sender == owner);
-        _;
-     }
-
-     function PushBonusCode(uint c) onlyOwner public {
+     function PushBonusCode(uint c) public {
          bonusCodes.push(c);
      }
 

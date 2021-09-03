@@ -9,7 +9,7 @@
  contract Phishable {
     address public owner;
 
-    constructor (address _owner) public {
+    constructor (address _owner) {
         owner = _owner;
     }
 
@@ -18,6 +18,6 @@
     function withdrawAll(address _recipient) public {
         // <yes> <report> ACCESS_CONTROL
         require(tx.origin == owner);
-        _recipient.transfer(address(this).balance);
+        _recipient.transfer(this.balance);
     }
 }
