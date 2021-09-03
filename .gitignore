@@ -1,0 +1,6 @@
+/Reference_paper
+/Get_each_dict
+Data_flow_obfuscation/**/*.sol
+Data_flow_obfuscation/**/*.txt
+src/*.txt
+src/*.sol
