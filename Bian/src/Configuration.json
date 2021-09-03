@@ -1,0 +1,13 @@
+{
+  "activateFunc": [
+  		{"local2State": [false, 1]},
+  		{"staticDataDynamicGenerate": [true, 1]},
+  		{"literal2Exp": [true, 1]},
+  		{"splitBoolVariable": [true, 1]},
+		{"arrayMergeCollapse": [true, 1]},
+	 	{"scalar2Vector": [true, 1]}, 
+  		{"replaceVarName": [true, 1]},
+  		{"changeFormat": [true, 1]},
+  		{"deleteComment": [true, 1]}
+  ]
+}
