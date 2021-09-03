@@ -13,6 +13,8 @@ Limited by our technical level, the number of currently available tools and test
 2. **BiAn** cannot handle contracts that generate warnings at compile time. We use the local compiler (*solc*) to compile a contract. If a warning is generated when compiling the contract, the local compiler (*solc*) does not output the compilation result, which leads to errors in the following obfuscation steps.
 3. **BiAn** may run abnormally when it confuses a contract. We welcome users to submit *bug* issues.
 
+Our experiments system: ubuntu16.04, cuda, python3.6
+
 In addition, in the uploaded Bian file contains the source code of Bian、test dataset and the real dataset.
 
 ## Open source code used in **BiAn**
