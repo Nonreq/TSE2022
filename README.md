@@ -5,42 +5,6 @@
 + **Layout obfuscation**. 
 + **Data flow obfuscation**. 
 + **Control flow obfuscation**. 
-## Usage
-```
-and you're done.
-
-## Feature completion status
-Feature completed:
-+ **Layout obfuscation**:
-    1. *Delete comments*.
-    2. *Disrupt the formatting*.
-    3. *Replace variable's name*.
-+ **Data flow obfuscation**.
-    1. *Convert local variables to state variables*. This feature is turned off by default, because changing local variables to state variables in *Solidity* may cause compile error in the *pure* or *view* function. User can manually modify the configuration file to turn up this feature.
-    2. *Dynamically generate static data*.
-    3. *Convert integer literals to arithmetic expressions*.
-    4. *Split boolean variables*.
-    5. *Scalar to vector*.
-
-The configuration file (*Configuration.json*) is a json file, and users can turn on or off various features by modifying this file, and can specify the activation probability of each feature (this function is used to balance the degree of confusion and *gas* growth).
-
-The following features' development has been stopped due to current restrictions. Uncompleted features:
-+ **Data flow obfuscation**.
-    1. *Collapse and merge arrays*.
-    2. *Split functions and contracts*.
-
-## An example
-Use **BiAn** (default configuration) to obfuscate the following contract.
-Before obfuscation:
-![beforeConfuse](beforeConfuse.png)
-
-After confuscation:
-![afterConfuse](afterConfuse.png)
-
-The obfuscated contract can still be compiled (no errors or warnings).
-
-## Input, output, and limitation
-**BiAn**'s input: solFile(.sol) and its corresponding jsonAstFile(.json_ast). Users can use the *solc* compiler to generate the corresponding *jsonAst* file.
 
 **BiAn**'s output: The contract after code obfuscation(.sol).
 
