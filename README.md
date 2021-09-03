@@ -4,14 +4,8 @@
 **BiAn** is a source code level code obfuscation tool developed for Solidity smart contracts. We will obfuscate the Solidity smart contract from the following three aspects:
 + **Layout obfuscation**. 
 + **Data flow obfuscation**. 
-+ **Control flow obfuscation**. This aspect will be developed by the project collaborator *ZhangMeng*.
-
++ **Control flow obfuscation**. 
 ## Usage
-Enter the following instructions in the terminal (eg., ubuntu os):
-```
-git clone https://github.com/xf97/BiAn
-cd BiAn/src
-python main.py yourContract.sol yourContract.sol's_json.ast
 ```
 and you're done.
 
