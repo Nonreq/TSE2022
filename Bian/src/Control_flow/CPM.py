@@ -10,4 +10,4 @@ def CPM(u,p,m,x):
         CPM(u,p,1-x)
     return x
 
-print(CPM(2,0.8,0.5,0.4))
+# print(CPM(2,0.8,0.5,0.4))
