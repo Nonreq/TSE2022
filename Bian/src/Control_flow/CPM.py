@@ -3,9 +3,9 @@ import math
 
 def CPM(u,p,m,x):
     if  0 <= x <p:
-        math.modf((math.cos(m * math.cos(u * math.acos(x)))+x/p))
+        divmod((math.cos(m * math.cos(u * math.acos(x)))+x/p), 1)
     elif p <= x < 0.5:
-        math.modf(math.sin(math.cos(u*math.acos(x))) + (x-p)/(0.5-p))
+        divmod(math.sin(math.cos(u*math.acos(x))) + (x-p)/(0.5-p), 1)
     else:
         CPM(u,p,1-x)
     return x
